@@ -1,0 +1,30 @@
+name: checkpoint_dim_halte
+config_version: 1.0
+template_name:
+module_name: great_expectations.checkpoint
+class_name: Checkpoint
+run_name_template:
+expectation_suite_name:
+batch_request: {}
+action_list:
+  - name: store_validation_result
+    action:
+      class_name: StoreValidationResultAction
+  - name: store_evaluation_params
+    action:
+      class_name: StoreEvaluationParametersAction
+  - name: update_data_docs
+    action:
+      class_name: UpdateDataDocsAction
+evaluation_parameters: {}
+runtime_configuration: {}
+validations:
+  - batch_request:
+      datasource_name: dim_halte
+      data_asset_name: dim_halte
+      options: {}
+      batch_slice:
+    expectation_suite_name: validator_dim_halte
+profilers: []
+ge_cloud_id:
+expectation_suite_ge_cloud_id:

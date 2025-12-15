@@ -1,0 +1,26 @@
+name: checkpoint_dim_time_2025-12-04 15:21:55.645929
+config_version: 1.0
+template_name:
+module_name: great_expectations.checkpoint
+class_name: Checkpoint
+run_name_template:
+expectation_suite_name: validator_dim_time
+batch_request:
+  datasource_name: dim_time_2025-12-04 15:21:55.645929
+  data_asset_name: dim_time_2025-12-04 15:21:55.645929
+action_list:
+  - name: store_validation_result
+    action:
+      class_name: StoreValidationResultAction
+  - name: store_evaluation_params
+    action:
+      class_name: StoreEvaluationParametersAction
+  - name: update_data_docs
+    action:
+      class_name: UpdateDataDocsAction
+evaluation_parameters: {}
+runtime_configuration: {}
+validations: []
+profilers: []
+ge_cloud_id:
+expectation_suite_ge_cloud_id:

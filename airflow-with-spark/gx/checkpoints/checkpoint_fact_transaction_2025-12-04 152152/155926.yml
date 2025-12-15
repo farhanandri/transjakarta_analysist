@@ -1,0 +1,26 @@
+name: checkpoint_fact_transaction_2025-12-04 15:21:52.155926
+config_version: 1.0
+template_name:
+module_name: great_expectations.checkpoint
+class_name: Checkpoint
+run_name_template:
+expectation_suite_name: validator_fact_transaction
+batch_request:
+  datasource_name: fact_transaction_2025-12-04 15:21:52.155926
+  data_asset_name: fact_transaction_2025-12-04 15:21:52.155926
+action_list:
+  - name: store_validation_result
+    action:
+      class_name: StoreValidationResultAction
+  - name: store_evaluation_params
+    action:
+      class_name: StoreEvaluationParametersAction
+  - name: update_data_docs
+    action:
+      class_name: UpdateDataDocsAction
+evaluation_parameters: {}
+runtime_configuration: {}
+validations: []
+profilers: []
+ge_cloud_id:
+expectation_suite_ge_cloud_id:
